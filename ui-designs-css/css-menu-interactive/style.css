@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(148, 48, 48, 0.2), 
+        rgba(219, 138, 138, 0.4)
+        ), 
+        url(images/background-image.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    width: 300px;
+    height: 100%;
+    background-color: #262626;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    display: flex; /* place nav items perfectly in the center inside navbar with flexbox */
+    justify-content: center; /* center items horizontally */
+    align-items: center; /* vertical item centering */
+    transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+    /* right: 0; */
+}
+
+/* Navbar is displayed when menu clicked */
+.change {
+    left: 0;
+}
+
+.hamburger-menu {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    cursor: pointer;
+    display: flex; /* separate the lines with flexbox */
+    flex-direction: column; /* place the lines as a column */
+    justify-content: space-around; /* make the space between the lines */
+    /* background-color: red; */
+    /* right: 50px; */
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: chocolate;
+    transition: all 0.8s;
+}
+
+/* Transform menu icon into X */
+.change .line-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px); /* Create X */
+}
+
+.change .line-2 {
+    opacity: 0;
+}
+
+.change .line-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px); /* Create X */
+}
+/* Transform menu icon into X - End */
+
+.nav-list {
+    text-align: right;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 25px;   
+}
+
+.nav-link {
+    text-decoration: none; /* remove underline */
+    font-size: 22px;
+    color: #eee;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative; /* (parent element): adjust the inline position of the lines so that they will be displayed */
+    padding: 3px 0;
+}
+
+/*
+    Create hover effects to display lines at the top and bottom of link items with smooth transition.
+    Create the lines with after & before pseudo elements.
+*/
+.nav-link::before,
+.nav-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: chocolate;
+    position: absolute; /* adjust the inline position of the lines so that they will be displayed */
+    left: 0; /* both lines on the same spot */
+    transform: scaleX(0); /* hide the lines by default and when hover over them the items those lines will be displayed */
+    transition: transform 0.5s; /* make the transition smooth */
+}
+
+.nav-link::before {
+    top: 0;
+    transform-origin: left; /* top line transforms to the right */
+}
+
+.nav-link::after {
+    bottom: 0; /* separate the lines top & bottom */
+    transform-origin: right; /* bottom line transforms to the left */
+}
+
+/* On hover, both lines will be displayed */
+.nav-link:hover::before,
+.nav-link:hover::after {
+    transform: scaleX(1); /* show the lines, expand them to the scale of X-axis */
+}
+
+/*
+    Create overlay effects to for top navbar to display when the links are clicked. 
+*/
+.top-nav-overlay {
+    width: 100%;
+    height: 200px;
+    background-color: #262626;
+    position: fixed;
+    top: -300px;
+    transition: top 1s cubic-bezier(1, 0, 0, 1);
+}
+
+.top-change {
+    top: 0;
+}
+
+.close-btn {
+    width: 45px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex; /* separate the lines with flexbox */
+    flex-direction: column; /* place the lines as a column */
+    justify-content: space-around; /* make the space between the lines */
+    /* background-color: red; */
+}
+
+.top-change .line-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px); /* Create X */
+}
+
+.top-change .line-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px); /* Create X */
+}
