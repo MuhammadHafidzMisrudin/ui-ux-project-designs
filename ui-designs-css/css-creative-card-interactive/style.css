@@ -8,3 +8,48 @@
 body {
     font-family: 'Alfa Slab One', cursive;
 }
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(images/bg.jpg) center no-repeat;
+    background-size: cover;
+    display: flex; /* use flex to place the card container at center position */
+    justify-content: center; /* to center the flex items perfectly */
+    align-items: center; /* to center the flex items perfectly */
+}
+
+.card {
+    width: 300px;
+    height: 560px;
+    background-color: #eee;
+    position: relative; /* parent position */  
+}
+
+.left-side {
+    position: absolute; /* child position */  
+    top: 0;
+    left: 0;
+    background-color: green;
+    width: 50%;
+    height: 100%;
+}
+
+.right-side {
+    position: absolute; /* child position */  
+    top: 0;
+    right: 0;
+    background-color: red;
+    width: 50%;
+    height: 100%;
+}
+
+.back-side {
+    position: absolute; /* child position */  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: chocolate;
+    z-index: -1; /* Place it behind left and right sides */  
+}
