@@ -41,7 +41,8 @@ body {
 }
 
 .hamburger-menu {
-    width: 35px;
+    /* width: 45px; */
+    width: 30px;
     height: 30px;
     position: fixed;
     top: 50px;
@@ -50,7 +51,9 @@ body {
     display: flex; /* separate the lines with flexbox */
     flex-direction: column; /* place the lines as a column */
     justify-content: space-around; /* make the space between the lines */
-    /* background-color: red; */
+    background-color: white;
+    padding: 20px;
+    border-radius: 100%;
     /* right: 50px; */
 }
 
@@ -154,7 +157,9 @@ body {
     display: flex; /* separate the lines with flexbox */
     flex-direction: column; /* place the lines as a column */
     justify-content: space-around; /* make the space between the lines */
-    /* background-color: red; */
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
 }
 
 .top-change .line-1 {
