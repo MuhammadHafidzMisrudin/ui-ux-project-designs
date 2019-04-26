@@ -22,8 +22,10 @@ body {
 .card {
     width: 300px;
     height: 560px;
-    background-color: #eee;
-    position: relative; /* parent position */  
+    /* background-color: #eee; */
+    border: 1px solid grey;
+    position: relative; /* parent position */
+    perspective: 1000px;   /* how far is the element from the user */
 }
 
 .left-side {
@@ -31,8 +33,14 @@ body {
     top: 0;
     left: 0;
     background-color: green;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(images/card-bg2.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: 0;
     width: 50%;
     height: 100%;
+    transform: rotateY(0deg); /* rotate according vertical direction */
+    transform-origin: left; /* rotate at the left side */ 
+    transition: transform 2s; /* make the effect smoother */
 }
 
 .right-side {
@@ -40,8 +48,14 @@ body {
     top: 0;
     right: 0;
     background-color: red;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(images/card-bg2.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: -180px;
     width: 50%;
     height: 100%;
+    transform: rotateY(0deg); /* rotate according vertical direction */
+    transform-origin: right; /* rotate at the right side */ 
+    transition: transform 2s; /* make the effect smoother */
 }
 
 .back-side {
@@ -51,5 +65,22 @@ body {
     width: 100%;
     height: 100%;
     background-color: chocolate;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(images/person.jpg) center no-repeat;
+    background-size: cover;
     z-index: -1; /* Place it behind left and right sides */  
+    transform: translateZ(-300px); /* Place it far from front side for 3D space */
+    transition: z-index 0.4s step-end, transform 2s; /* make delay time for z-index for effect */
+}
+
+.card:hover .left-side {
+    transform: rotateY(-360deg); /* rotate according vertical direction */
+}
+
+.card:hover .right-side {
+    transform: rotateY(360deg); /* rotate according vertical direction */
+}
+
+.card:hover .back-side {
+    transform: translateZ(0); /* move the backside forward */
+    z-index: 1; /* left and right sides behind backside */
 }
