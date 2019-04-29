@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+/* @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One'); */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
 
 * {
     margin: 0;
@@ -6,7 +7,8 @@
 }
 
 body {
-    font-family: 'Alfa Slab One', cursive;
+    /* font-family: 'Alfa Slab One', cursive; */
+    font-family: 'Josefin Slab', serif;
 }
 
 .container {
@@ -20,12 +22,19 @@ body {
 }
 
 .card {
-    width: 300px;
+    /* width: 300px; */
+    width: 400px;
     height: 560px;
     /* background-color: #eee; */
     border: 1px solid grey;
     position: relative; /* parent position */
     perspective: 1000px;   /* how far is the element from the user */
+}
+
+.sides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .left-side {
@@ -83,4 +92,26 @@ body {
 .card:hover .back-side {
     transform: translateZ(0); /* move the backside forward */
     z-index: 1; /* left and right sides behind backside */
+}
+
+.name {
+    color: #fff;
+    font-size: 35px;
+    margin: 20px 5px;
+}
+
+.profession {
+    color: #fff;
+    font-size: 25px;
+    margin: 20px 5px;
+}
+
+.left-side .name,
+.left-side .profession {
+    text-align: center;
+}
+
+.right-side .name,
+.right-side .profession {
+    text-align: center;
 }
