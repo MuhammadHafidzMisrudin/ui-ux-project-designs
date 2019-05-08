@@ -32,9 +32,9 @@ body {
 }
 
 .sides {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex; /* use flex to place the heading names at center position */
+    flex-direction: column; /* place the headings as a column */
+    justify-content: center; /* to center the flex items perfectly */
 }
 
 .left-side {
@@ -78,7 +78,11 @@ body {
     background-size: cover;
     z-index: -1; /* Place it behind left and right sides */  
     transform: translateZ(-300px); /* Place it far from front side for 3D space */
-    transition: z-index 0.4s step-end, transform 2s; /* make delay time for z-index for effect */
+    transition: z-index 0.4s step-end, transform 2s, box-shadow 1s; /* make delay time for z-index for effect */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* place paragraph at the end of backside container */
+    box-shadow: 40px 40px 80px #000;
 }
 
 .card:hover .left-side {
@@ -92,6 +96,7 @@ body {
 .card:hover .back-side {
     transform: translateZ(0); /* move the backside forward */
     z-index: 1; /* left and right sides behind backside */
+    box-shadow: 50px 50px 100px #000;
 }
 
 .name {
@@ -109,9 +114,20 @@ body {
 .left-side .name,
 .left-side .profession {
     text-align: center;
+    /* text-align: right; */
 }
 
 .right-side .name,
 .right-side .profession {
     text-align: center;
+}
+
+.biography {
+    color: #fff;
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
 }
