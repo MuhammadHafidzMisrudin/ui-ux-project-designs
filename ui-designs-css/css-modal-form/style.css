@@ -166,4 +166,16 @@
     margin: 10px 0 50px 0;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Hover effect for signup/login button */
+.form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Click effect for signup/login button */
+.form button:active {
+    transform: translateY(0);
 }
