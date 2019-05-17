@@ -76,3 +76,94 @@
 .btn:active {
     transform: translateY(0);
 }
+
+/* Custom styling for common modal class for signup and login */
+.modal {
+    width: 400px;
+    background: linear-gradient(rgba(148, 42, 42, 0.8), rgba(185, 129, 129, 0.6)), url(images/image-bg.jpg) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    border-radius: 20px; 
+}
+
+/* X close button for signup */
+.x-btn {
+    position: absolute;
+    right: 20px;
+    font-size: 50px;
+    color: #222;
+    cursor: pointer;
+}
+
+/* Form main header */
+.form-header {
+    text-align: center;
+    margin: 80px 0 150px 0;
+    color: #fff;
+}
+
+.form-header h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.form-header h3 {
+    font-family: 'Monserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* Custom styling form class for inputs */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-group input {
+    width: 250px;
+    padding: 15px 15px 15px 50px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.input-group i {
+    position: absolute;
+    top: 13px;
+    left: 17px;
+    font-size: 18px;
+    color: #aaa;
+}
+
+/* Custom styling signup button */
+.form button {
+    width: 310px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: #d867d8;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 10px 0 50px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
