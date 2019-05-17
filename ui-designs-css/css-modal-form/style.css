@@ -87,6 +87,14 @@
     left: 50%;
     transform: translate(-50%, -50%);   
     border-radius: 20px; 
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Class for display modal form */
+.display {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* X close button for signup */
