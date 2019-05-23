@@ -14,12 +14,16 @@ $(function () {
     signupBtn.on("click", () => {
         signupModal.addClass("display");
         formContainerDarkOverlay.addClass("disable-overlay");
+        signupBtn.css('background-color', 'tomato');
+        loginBtn.css('background-color', 'transparent');
     });
 
     // Modal login pop when clicked.
     loginBtn.on("click", () => {
         loginModal.addClass("display");
-        formContainerDarkOverlay.addClass("disable-overlay");
+        formContainerDarkOverlay.addClass("disable-overlay"); 
+        loginBtn.css('background-color', 'tomato');
+        signupBtn.css('background-color', 'transparent');
     });
 
     // Close signup modal.
