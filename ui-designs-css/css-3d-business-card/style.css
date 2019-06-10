@@ -42,7 +42,7 @@ body {
 
 /* Logo left */
 .left img {
-    width: 80%;
+    width: 90%;
 }
 
 /* Heading element on the left side */
@@ -76,4 +76,36 @@ body {
     padding: 5px 0 5px 30px;
     margin: 30px 0;
     box-shadow: 0 10px 20px rgba(0, 0 , 0, 0.3);
+}
+
+/* Custom styles for icons right content */
+.right-content i {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1187ac;
+    margin-right: 20px;
+}
+
+.person h4 {
+    text-transform: uppercase;
+}
+
+/* Phone section */
+.phone {
+    padding-left: 30px;
+}
+
+/* Phone section */
+.email {
+    padding-left: 10px;
+}
+
+/* Phone section */
+.address {
+    padding-left: 10px;
 }
