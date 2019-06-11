@@ -28,13 +28,18 @@ body {
     position: relative; /* Set the position according to parent element */
 }
 
-/* Front side card */
-.card-front {
+/* Front & back sides common properties */
+.card-front,
+.card-back {
     width: 100%;
     height: 100%;
+    backface-visibility: hidden; /* Hide the back face of card element */
+}
+
+/* Front side card */
+.card-front {
     display: flex; /* Place the element content left and right sides, side by side */
     background: linear-gradient(100deg, rgb(255, 255, 255) 40%, rgb(38, 38, 38) 0); /* Split the background color */
-    backface-visibility: hidden; /* Hide the back face of card element */
 }
 
 /* Left side of the content element */
@@ -120,4 +125,14 @@ body {
 .card-back {
     transform: rotateY(180deg);
     position: absolute; /* Set the position image perfectly in the center */
+    top: 0;
+    left: 0;
+    display: flex; /* Center the content element perfectly */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo back side */
+.card-back img {
+    width: 70%
 }
