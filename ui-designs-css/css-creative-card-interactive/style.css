@@ -16,9 +16,9 @@ body {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(images/bg.jpg) center no-repeat;
     background-size: cover;
-    display: flex; /* use flex to place the card container at center position */
-    justify-content: center; /* to center the flex items perfectly */
-    align-items: center; /* to center the flex items perfectly */
+    display: flex; /* Use flex to place the card container at center position */
+    justify-content: center; /* To center the flex items perfectly */
+    align-items: center; /* To center the flex items perfectly */
 }
 
 .card {
@@ -27,18 +27,18 @@ body {
     height: 560px;
     /* background-color: #eee; */
     border: 1px solid grey;
-    position: relative; /* parent position */
-    perspective: 1000px;   /* how far is the element from the user */
+    position: relative; /* Parent position */
+    perspective: 1000px;   /* How far is the element from the user */
 }
 
 .sides {
-    display: flex; /* use flex to place the heading names at center position */
-    flex-direction: column; /* place the headings as a column */
-    justify-content: center; /* to center the flex items perfectly */
+    display: flex; /* Use flex to place the heading names at center position */
+    flex-direction: column; /* Place the headings as a column */
+    justify-content: center; /* To center the flex items perfectly */
 }
 
 .left-side {
-    position: absolute; /* child position */  
+    position: absolute; /* Child position */  
     top: 0;
     left: 0;
     background-color: green;
@@ -47,13 +47,13 @@ body {
     background-position-x: 0;
     width: 50%;
     height: 100%;
-    transform: rotateY(0deg); /* rotate according vertical direction */
-    transform-origin: left; /* rotate at the left side */ 
-    transition: transform 2s; /* make the effect smoother */
+    transform: rotateY(0deg); /* Rotate according vertical direction */
+    transform-origin: left; /* Rotate at the left side */ 
+    transition: transform 2s; /* Make the effect smoother */
 }
 
 .right-side {
-    position: absolute; /* child position */  
+    position: absolute; /* Child position */  
     top: 0;
     right: 0;
     background-color: red;
@@ -62,13 +62,13 @@ body {
     background-position-x: -180px;
     width: 50%;
     height: 100%;
-    transform: rotateY(0deg); /* rotate according vertical direction */
-    transform-origin: right; /* rotate at the right side */ 
-    transition: transform 2s; /* make the effect smoother */
+    transform: rotateY(0deg); /* Rotate according vertical direction */
+    transform-origin: right; /* Rotate at the right side */ 
+    transition: transform 2s; /* Make the effect smoother */
 }
 
 .back-side {
-    position: absolute; /* child position */  
+    position: absolute; /* Child position */  
     top: 0;
     left: 0;
     width: 100%;
@@ -78,24 +78,24 @@ body {
     background-size: cover;
     z-index: -1; /* Place it behind left and right sides */  
     transform: translateZ(-300px); /* Place it far from front side for 3D space */
-    transition: z-index 0.4s step-end, transform 2s, box-shadow 1s; /* make delay time for z-index for effect */
+    transition: z-index 0.4s step-end, transform 2s, box-shadow 1s; /* Make delay time for z-index for effect */
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* place paragraph at the end of backside container */
+    align-items: flex-end; /* Place paragraph at the end of backside container */
     box-shadow: 40px 40px 80px #000;
 }
 
 .card:hover .left-side {
-    transform: rotateY(-360deg); /* rotate according vertical direction */
+    transform: rotateY(-360deg); /* Rotate according vertical direction */
 }
 
 .card:hover .right-side {
-    transform: rotateY(360deg); /* rotate according vertical direction */
+    transform: rotateY(360deg); /* Rotate according vertical direction */
 }
 
 .card:hover .back-side {
-    transform: translateZ(0); /* move the backside forward */
-    z-index: 1; /* left and right sides behind backside */
+    transform: translateZ(0); /* Move the backside forward */
+    z-index: 1; /* Left and right sides behind backside */
     box-shadow: 50px 50px 100px #000;
 }
 
