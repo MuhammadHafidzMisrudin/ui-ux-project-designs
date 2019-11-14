@@ -21,7 +21,7 @@ body {
 
 .card {
     width: 550px;
-    height: 300px;
+    height: 320px;
     background-color: #fff;
     transform-style: preserve-3d; /* Apply the 3D environment to content child element */
     /* transform: rotateY(180deg); Rotate card 180 degree / flip card */
@@ -48,7 +48,7 @@ body {
 /* Front side card */
 .card-front {
     display: flex; /* Place the element content left and right sides, side by side */
-    background: linear-gradient(100deg, rgb(255, 255, 255) 40%, rgb(38, 38, 38) 0); /* Split the background color */
+    background: linear-gradient(100deg, rgb(255, 255, 255) 42%, rgb(38, 38, 38) 0); /* Split the background color */
 }
 
 /* Left side of the content element */
@@ -67,8 +67,8 @@ body {
 
 /* Heading element on the left side */
 .left h4 {
-    margin: 10px;
-    font-size: 18px;
+    margin: 15px;
+    font-size: 20px;
     letter-spacing: 1px;
 }
 
@@ -120,12 +120,12 @@ body {
     padding-left: 30px;
 }
 
-/* Phone section */
+/* Email section */
 .email {
     padding-left: 10px;
 }
 
-/* Phone section */
+/* Address section */
 .address {
     padding-left: 10px;
 }
@@ -143,5 +143,5 @@ body {
 
 /* Logo back side */
 .card-back img {
-    width: 70%
+    width: 85%
 }
