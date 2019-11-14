@@ -132,7 +132,7 @@ body {
 
 /* Back side card */
 .card-back {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Set the content at the back side */
     position: absolute; /* Set the position image perfectly in the center */
     top: 0;
     left: 0;
@@ -143,5 +143,5 @@ body {
 
 /* Logo back side */
 .card-back img {
-    width: 80%
+    width: 85%
 }
