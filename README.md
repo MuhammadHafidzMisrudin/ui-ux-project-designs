@@ -17,3 +17,8 @@ It includes Design and Prototypes using design tools such as Adobe Photoshop, Fi
 
  - [Link 1](https://hafidz-3d-business-card.web.app/)
  - [Link 2](https://hafidz-3d-business-card.firebaseapp.com/)
+
+ ## Design 4: Creative and Interactive Developer Card
+ It has some interactive effect on a card when hover over it.
+
+ - Link (To Be Added)
