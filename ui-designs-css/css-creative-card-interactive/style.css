@@ -23,9 +23,9 @@ body {
 
 .card {
     /* width: 300px; */
-    width: 400px;
-    height: 560px;
     /* background-color: #eee; */
+    width: 500px;
+    height: 560px;
     border: 1px solid grey;
     position: relative; /* Parent position */
     perspective: 1000px;   /* How far is the element from the user */
@@ -35,6 +35,7 @@ body {
     display: flex; /* Use flex to place the heading names at center position */
     flex-direction: column; /* Place the headings as a column */
     justify-content: center; /* To center the flex items perfectly */
+    justify-items: center;
 }
 
 .left-side {
@@ -102,19 +103,18 @@ body {
 .name {
     color: #fff;
     font-size: 35px;
-    margin: 20px 5px;
+    margin: 20px auto;
 }
 
 .profession {
     color: #fff;
     font-size: 25px;
-    margin: 20px 5px;
+    margin: 20px auto;
 }
 
 .left-side .name,
 .left-side .profession {
     text-align: center;
-    /* text-align: right; */
 }
 
 .right-side .name,
@@ -125,6 +125,7 @@ body {
 .biography {
     color: #fff;
     font-size: 22px;
+    font-style: italic;
     background-color: rgba(0, 0, 0, 0.4);
     width: 90%;
     text-align: center;
