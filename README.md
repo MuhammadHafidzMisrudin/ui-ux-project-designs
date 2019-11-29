@@ -13,12 +13,13 @@ It includes Design and Prototypes using design tools such as Adobe Photoshop, Fi
  - Figma: [Dashboard 02](https://github.com/MuhammadHafidzMisrudin/ui-ux-project-designs/tree/master/prototypes-systems/figma)
 
  ## Design 3: My 3D Business Card
- It has some 3D effect on a card when hover over it.
+ It displays some 3D effect on a card when hover over it.
 
  - [Link 1](https://hafidz-3d-business-card.web.app/)
  - [Link 2](https://hafidz-3d-business-card.firebaseapp.com/)
 
  ## Design 4: Creative and Interactive Developer Card
- It has some interactive effect on a card when hover over it.
+ It displays some interactive effect on a card when hover over it.
 
- - Link (To Be Added)
+ - [Link 1](https://creative-developer-card.web.app/)
+ - [Link 2](https://creative-developer-card.firebaseapp.com/)
