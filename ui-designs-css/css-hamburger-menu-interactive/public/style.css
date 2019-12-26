@@ -53,6 +53,7 @@
     transform: rotate(40deg) translateY(5px);
 }
 
+/* background color cover overlay */
 .bg-cover {
     background-color: rgba(103, 182, 123, 0.9);
     width: 45px;
@@ -63,4 +64,37 @@
     z-index: 100; /* place it behind */
     border-radius: 50%;
     transform: scale(150); 
+}
+
+.nav-list {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex; /* make it flex */
+    flex-direction: column; /* change the direction into column */
+    justify-content: center; /* center flex items vertically */
+    align-items: center; /* center items horizontally */
+    z-index: 200; /* place it in the middle */
+    list-style: none; /* remove bullet point */
+}
+
+.nav-item {
+    margin: 1.5vh 0;
+}
+
+.nav-link {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    text-decoration: none; /* remove default underline */
+    color: #ffff;
+    transition: letter-spacing 0.3s; /* make effect smoother */
+}
+
+/* create hover effect on navigation link items */
+.nav-link:hover {
+    letter-spacing: 0.8rem;
+    color: yellow;
 }
