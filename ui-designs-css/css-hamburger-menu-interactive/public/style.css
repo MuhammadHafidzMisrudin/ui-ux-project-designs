@@ -28,6 +28,12 @@
     justify-content: center; /* center flex items vertically */
     align-items: center; /* center items horizontally */
     z-index: 300; /* place it on top */
+    transition: all 0.5s; /* add smooth transition */
+}
+
+/* click effect: change background color */
+.change .hamburger-menu {
+    background-color: #eef0fb;
 }
 
 .line {
@@ -36,21 +42,24 @@
     background-color: #eee;
     margin: 3px 0px;
     transform-origin: right;
+    transition: all 0.5s; /* add smooth transition */
 }
 
 /* rotate top line */
-.line-1 {
+.change .line-1 {
     transform: rotate(-40deg) translateY(-5px);
+    background-color: #67b67b;
 }
 
 /* hide middle line */
-.line-2 {
+.change .line-2 {
     opacity: 0;
 }
 
 /* rotate bottom line  */
-.line-3 {
+.change .line-3 {
     transform: rotate(40deg) translateY(5px);
+    background-color: #67b67b;
 }
 
 /* background color cover overlay */
@@ -63,7 +72,13 @@
     right: 35px;
     z-index: 100; /* place it behind */
     border-radius: 50%;
-    transform: scale(150); 
+    transition: transform 0.3s; /* add smooth transition */
+}
+
+/* click effect: hide overlay background cover and expand on click */
+.change .bg-cover {
+    transform: scale(150); /* expand bg cover */
+    transition: transform 0.3s;
 }
 
 .nav-list {
@@ -76,6 +91,16 @@
     align-items: center; /* center items horizontally */
     z-index: 200; /* place it in the middle */
     list-style: none; /* remove bullet point */
+    opacity: 0; /* hide element */
+    visibility: hidden; /* hide element */
+    transition: opacity 0.1s; /* add smooth transition */
+}
+
+/* click effect: display navigation item links */
+.change .nav-list {
+    transition: opacity 0.1s; /* add smooth transition */
+    opacity: 1; /* show element */
+    visibility: visible; /* show element */
 }
 
 .nav-item {
