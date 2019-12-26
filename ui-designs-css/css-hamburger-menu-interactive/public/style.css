@@ -11,3 +11,27 @@
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(images/bg03.jpg) fixed center no-repeat;
     background-size: cover;
 }
+
+.hamburger-menu {
+    width: 70px;
+    height: 70px;
+    background-color: #67b67b;
+    position: fixed;
+    top: 40px;
+    right: 60px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    display: flex; /* make it flex */
+    flex-direction: column; /* change the direction into column */
+    justify-content: center; /* center flex items vertically */
+    align-items: center; /* center items horizontally */
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: #eee;
+    margin: 5px 0px;
+}
