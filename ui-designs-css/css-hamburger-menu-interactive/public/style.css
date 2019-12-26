@@ -13,12 +13,12 @@
 }
 
 .hamburger-menu {
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     background-color: #67b67b;
     position: fixed;
-    top: 40px;
-    right: 60px;
+    top: 30px;
+    right: 30px;
     border: none;
     border-radius: 50%;
     outline: none;
@@ -27,11 +27,40 @@
     flex-direction: column; /* change the direction into column */
     justify-content: center; /* center flex items vertically */
     align-items: center; /* center items horizontally */
+    z-index: 300; /* place it on top */
 }
 
 .line {
-    width: 30px;
+    width: 36px;
     height: 2px;
     background-color: #eee;
-    margin: 5px 0px;
+    margin: 3px 0px;
+    transform-origin: right;
+}
+
+/* rotate top line */
+.line-1 {
+    transform: rotate(-40deg) translateY(-5px);
+}
+
+/* hide middle line */
+.line-2 {
+    opacity: 0;
+}
+
+/* rotate bottom line  */
+.line-3 {
+    transform: rotate(40deg) translateY(5px);
+}
+
+.bg-cover {
+    background-color: rgba(103, 182, 123, 0.9);
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    top: 35px;
+    right: 35px;
+    z-index: 100; /* place it behind */
+    border-radius: 50%;
+    transform: scale(150); 
 }
