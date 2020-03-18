@@ -6,10 +6,37 @@
 .slideshow-wrapper {
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 .slide {
     width: 100%;
     height: 100%;
     position: absolute;
+    background-color: #000; /* make it a bit darker */
+}
+
+.slide img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover; /* make images cover background wholy */
+    opacity: 0.6; /* make it a bit darker */
+}
+
+.control {
+    position: absolute;
+    top: 0;
+    width: 15vw;
+    height: 100%;
+    background-color: rgba(92, 94, 97, 0.6);
+    z-index: 100; /* place it on the top */
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 0; /* set it to the left */
+}
+
+.right-arrow {
+    right: 0; /* set it to the right */
 }
