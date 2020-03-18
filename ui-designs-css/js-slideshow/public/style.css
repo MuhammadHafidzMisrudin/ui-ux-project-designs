@@ -31,12 +31,44 @@
     background-color: rgba(92, 94, 97, 0.6);
     z-index: 100; /* place it on the top */
     cursor: pointer;
+    display: flex; /* use flex to center arrows */
+    justify-content: center; /* to center item horizontally */
+    align-items: center; /* for vertical centering */
 }
 
+/* overlay left arrow */
 .left-arrow {
     left: 0; /* set it to the left */
 }
 
+/* overlay right arrow */
 .right-arrow {
     right: 0; /* set it to the right */
+}
+
+/* manual arrow lines */
+.line {
+    width: 0.2rem;
+    height: 10rem;
+    background-color: #ddd5d5;
+}
+
+/* arrow line 1 */
+.line-1 {
+    transform: rotate(30deg) translateY(0.80rem); /* translate y-axis to move it closer */
+}
+
+/* arrow line 2 */
+.line-2 {
+    transform: rotate(-30deg) translateY(-0.80rem); /* translate y-axis to move it closer */
+}
+
+/* arrow line 3 */
+.line-3 {
+    transform: rotate(-30deg) translateY(0.80rem); /* translate y-axis to move it closer */
+}
+
+/* arrow line 4 */
+.line-4 {
+    transform: rotate(30deg) translateY(-0.80rem); /* translate y-axis to move it closer */
 }
