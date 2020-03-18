@@ -72,3 +72,17 @@
 .line-4 {
     transform: rotate(30deg) translateY(-0.80rem); /* translate y-axis to move it closer */
 }
+
+/* play and pause */
+.play-pause {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%); /* to center the element */
+    cursor: pointer;
+}
+
+.play-pause span {
+    color: #fff;
+    font-size: 70px;
+}
