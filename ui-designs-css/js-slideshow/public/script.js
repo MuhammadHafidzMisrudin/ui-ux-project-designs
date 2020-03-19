@@ -2,6 +2,13 @@ $(() => {
 
     // indicate the number of a slide which will be currently showing.
     let current = 1;
+    
+    // flag to indicate intial value play-pause
+    let playPauseBool = true;
+
+    // set interval function to changing slides.
+    let interval;
+
 
     // function to change slides automatically
     const changeSlides = () => {
@@ -21,7 +28,7 @@ $(() => {
 
         // loop through array
         slides.forEach((slide) => {
-            // show the current image.
+            // show the current image, else hide it.
             if (slide.classList[1].split("-")[1]*1 === current) {
                 slide.style.cssText = "visibility: visible; opacity: 1";
             } else {
@@ -31,12 +38,29 @@ $(() => {
     };
 
     const playPause = () => {
-        // change the slide after 3 seconds.
-        setInterval(() => {
-            current++;
-            changeSlides();
-        }, 1000);
+
+        // if true then it plays automatically, otherwise, it stops.
+        if (playPauseBool) {
+            // change the slide after 3 seconds.
+            interval = setInterval(() => {
+                current++;
+                changeSlides();
+            }, 1000);
+            console.log(playPauseBool);
+            playPauseBool = false; // set it false.
+            console.log(playPauseBool);
+        } else {
+            // if play-pause is checked for second time, clear the interval, set it true.
+            clearInterval(interval);
+            playPauseBool = true;
+            console.log(playPauseBool);
+        }
     };
+
+    $(".play-pause").click(() => {
+        // invoke and trigger the play-pause function.
+        playPause();
+    });
 
     changeSlides();
     playPause();
