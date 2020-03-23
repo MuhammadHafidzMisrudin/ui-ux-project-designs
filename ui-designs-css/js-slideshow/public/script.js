@@ -49,11 +49,11 @@ $(() => {
 
         // if true then it plays automatically, otherwise, it stops.
         if (playPauseBool) {
-            // change the slide after 1 second.
+            // change the slide after 3 seconds.
             interval = setInterval(() => {
                 current++;
                 changeSlides();
-            }, 1000);
+            }, 3000);
             console.log("playpausebool-before: ", playPauseBool);
             playPauseBool = false; // set it false.
             console.log("playpausebool-after: ", playPauseBool);
