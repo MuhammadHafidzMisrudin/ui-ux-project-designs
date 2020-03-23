@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +27,42 @@
     height: inherit;
     object-fit: cover; /* make images cover background wholy */
     opacity: 0.6; /* make it a bit darker */
+}
+
+.overlay {
+  position: absolute;
+  z-index: 10000;
+  width: 30%; /* set the width of the positioned div */
+  margin: 0 auto;
+  padding: 30px;
+  top: 20%; /* adjust this value to move the positioned div up and down */
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+  background-color: rgba(92, 94, 97, 0.4);
+}
+
+.overlay h1 {
+    font-size: 50px;
+}
+
+.overlay .para-name {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.overlay .para-name-chinese {
+    margin: 10px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 30px;
+}
+
+.overlay .para-decs {
+    margin: 10px;
+    font-size: 30px;
 }
 
 /* common class for visibility of arrow */
