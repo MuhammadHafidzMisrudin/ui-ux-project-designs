@@ -25,6 +25,11 @@ $(() => {
             current = 1;
         }
 
+        // check if current slide is at zero, get the slide at the last element.
+        if (current === 0) {
+            current = slides.length;
+        }
+
         // loop through an array.
         slides.forEach((slide) => {
             // show the current slide image with index, else hide it.
@@ -79,10 +84,28 @@ $(() => {
         }
     };
 
-    // event selector for play and pause.
+    // event selector for play and pause control.
     $(".play-pause").click(() => {
         // invoke and trigger the play-pause function.
         playPause();
+    });
+
+    // event selector for left arrow control.
+    $(".left-arrow").click(() => {
+        if (playPauseBool === false) {
+            playPause();
+        }
+        current--;
+        changeSlides();
+    });
+
+    // event selector for right arrow control.
+    $(".right-arrow").click(() => {
+        if (playPauseBool === false) {
+            playPause();
+        }
+        current++;
+        changeSlides();
     });
 
     changeSlides();
