@@ -13,7 +13,7 @@ $(() => {
     const changeSlides = () => {
 
         // select all elements with classname, slide and returns an array like object called node list.
-        const slideList = $( ".slide" );
+        const slideList = $(".slide");
 
         // create an array of slides from parent element with classname (.slide) and convert it into an array.
         // transform a node list into an array.
