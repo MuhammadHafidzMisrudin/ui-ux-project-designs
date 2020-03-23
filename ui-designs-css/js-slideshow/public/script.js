@@ -66,6 +66,9 @@ $(() => {
 
         // invoke function to change icon.
         changePlayPause();
+
+        // invoke function show the visibility of arrow controls.
+        arrowVisibility();
     };
 
     // function to change the icon while changing the slides.
@@ -83,6 +86,19 @@ $(() => {
             document.getElementById("icon").classList.add("fa-play");
         }
     };
+
+    // invoke function to check and show the visibility of arrow controls.
+    const arrowVisibility = () => {
+        const arrows = $(".control");
+
+        Array.from(arrows).forEach((arrow) => {
+            if (playPauseBool === false) {
+                arrows.addClass("arrow-visibility");
+            } else {
+                arrows.removeClass("arrow-visibility");
+            }
+        });
+    }
 
     // event selector for play and pause control.
     $(".play-pause").click(() => {

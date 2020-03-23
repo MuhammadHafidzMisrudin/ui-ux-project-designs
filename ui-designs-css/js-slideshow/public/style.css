@@ -7,6 +7,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    background-color: #000;
 }
 
 .slide {
@@ -14,6 +15,7 @@
     height: 100%;
     position: absolute;
     background-color: #000; /* make it a bit darker */
+    transition: opacity 1s;
 }
 
 .slide img {
@@ -23,6 +25,12 @@
     opacity: 0.6; /* make it a bit darker */
 }
 
+/* common class for visibility of arrow */
+.arrow-visibility {
+    opacity: 0;
+}
+
+/* common class for arrows */
 .control {
     position: absolute;
     top: 0;
@@ -34,6 +42,12 @@
     display: flex; /* use flex to center arrows */
     justify-content: center; /* to center item horizontally */
     align-items: center; /* for vertical centering */
+    transition: opacity 0.5s linear;
+}
+
+/* common class for arrow control */
+.control:hover {
+    opacity: 1;
 }
 
 /* overlay left arrow */
