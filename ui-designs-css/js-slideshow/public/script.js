@@ -58,6 +58,25 @@ $(() => {
             playPauseBool = true; // set it true.
             console.log("else-playpausebool-now: ", playPauseBool);
         }
+
+        // invoke function to change icon.
+        changePlayPause();
+    };
+
+    // function to change the icon while changing the slides.
+    const changePlayPause = () => {
+        // get element by id of icon.
+        // get second element of an array of classname; fa-play.
+        const iconID = document.getElementById("icon").classList[1];
+
+        // check if classname is fa-play, then remove its class and add a new classname, fa-pause.
+        if (iconID == "fa-play") {
+            document.getElementById("icon").classList.remove("fa-play");
+            document.getElementById("icon").classList.add("fa-pause");
+        } else {
+            document.getElementById("icon").classList.remove("fa-pause");
+            document.getElementById("icon").classList.add("fa-play");
+        }
     };
 
     // event selector for play and pause.
