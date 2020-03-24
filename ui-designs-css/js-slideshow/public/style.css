@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
 * {
     margin: 0;
@@ -138,6 +139,42 @@
     color: #3affe4; 
     font-family: 'Crimson Text', serif;
 }
+
+/* quote styles - begin */
+blockquote {
+    quotes: "“" "”" "‘" "’";
+    font-style: italic;
+}
+
+blockquote:before {
+    content: open-quote;
+}
+  
+blockquote:after {
+    content: close-quote;
+}
+
+blockquote:before,
+blockquote:after {
+  color: deepPink;
+  font-size: 1.2em;
+}
+
+blockquote {
+    margin-left: 0px;
+    border-left: 5px solid deepPink;
+    background-color: rgba(0,0,0,0.3);
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+.overlay .para-author {
+    margin: 15px 0 15px 0;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* quote styles - end */
 
 /* common class for visibility of arrow */
 .arrow-visibility {
