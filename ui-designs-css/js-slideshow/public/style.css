@@ -29,6 +29,7 @@
     opacity: 0.6; /* make it a bit darker */
 }
 
+/* text box over image container */
 .overlay {
   position: absolute;
   z-index: 10000;
@@ -45,24 +46,28 @@
 }
 
 .overlay h1 {
-    font-size: 50px;
+    font-size: 40px;
+    text-decoration: underline;
 }
 
 .overlay .para-name {
-    font-family: 'Roboto', sans-serif;
     margin: 10px;
-    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .overlay .para-name-chinese {
     margin: 10px;
     font-family: 'ZCOOL XiaoWei', serif;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .overlay .para-decs {
     margin: 10px;
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /* common class for visibility of arrow */
