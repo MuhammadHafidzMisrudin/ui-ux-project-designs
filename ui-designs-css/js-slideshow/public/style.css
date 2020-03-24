@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,500,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
 * {
     margin: 0;
@@ -51,23 +53,51 @@
 }
 
 .overlay .para-name {
-    margin: 10px;
+    margin: 15px;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: 600;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .overlay .para-name-chinese {
-    margin: 10px;
-    font-family: 'ZCOOL XiaoWei', serif;
+    margin: 15px;
+    font-family: 'Noto Serif SC', serif;
     font-size: 25px;
     font-weight: 600;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .overlay .para-decs {
     margin: 10px;
+    padding-top: 25px;
     font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.overlay .para-date {
+    margin: 10px;
+    font-size: 25px;
     font-weight: 500;
+}
+
+.overlay .para-pos {
+    margin: 10px;
+    font-size: 27px;
+    font-family: 'Righteous', cursive;
+    color: aquamarine;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.overlay .para-work-desc li {
+    margin: 5px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* common class for visibility of arrow */
