@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,500,600,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 
 * {
     margin: 0;
@@ -83,6 +86,15 @@
     font-weight: 500;
 }
 
+.overlay .para-company {
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: deepskyblue;
+}
+
 .overlay .para-pos {
     margin: 10px;
     font-size: 27px;
@@ -98,6 +110,33 @@
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.overlay .para-emails {
+    margin: 10px 0 10px 0;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Crimson Text', serif;
+}
+
+.overlay .para-mobile {
+    margin: 10px 0 10px 0;
+    font-size: 25px;
+}
+
+.overlay .para-linkedin,
+.overlay .para-github,
+.overlay .para-indeed {
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+}
+
+.overlay .para-linkedin a,
+.overlay .para-github a,
+.overlay .para-indeed a {
+    text-decoration: underline;
+    color: #3affe4; 
+    font-family: 'Crimson Text', serif;
 }
 
 /* common class for visibility of arrow */
