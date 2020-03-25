@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- js links  -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-
     <!-- css links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
 
     <title>JS Slideshow</title>
@@ -21,124 +20,147 @@
 
 <body>
 
-    <div class="container">
+    <div class="container-fluid ctn-extend">
         <div class="slideshow-wrapper">
-            <!-- left arrow -->
-            <div class="control left-arrow">
-                <div class="arrow">
-                    <div class="line line-1"></div>
-                    <div class="line line-2"></div>
+            
+            <!-- container left-arrow -->
+            <div class="container">
+                <!-- left arrow -->
+                <div class="control left-arrow">
+                    <div class="arrow">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                    </div>
                 </div>
             </div>
+            <!-- end container left-arrow -->
 
-            <!-- slides section -->
-            <div class="slides">
-                <!-- image 1 -->
-                <div class="slide slide-1">
-                    <img src="images/img1.jpg">
-                    <span class=overlay>
-                        <span class="container-avatar">
-                            <img src="images/avatar.jpg" alt="" class="avatar">
+            <!-- container slides -->
+            <div class="container">
+                <!-- slides section -->
+                <div class="slides">
+                    <!-- image 1 -->
+                    <div class="slide slide-1">
+                        <img src="images/img1.jpg">
+                        <span class=overlay>
+                            <!-- <span class="container-avatar">
+                                        <img src="images/avatar.jpg" alt="" class="avatar">
+                                    </span> -->
+                            <h1>Hello There!</h1>
+                            <p class="para-name">My name is Hafidz</p>
+                            <p class="para-name-chinese">我叫何飞志</p>
+                            <p class="para-decs">
+                                I am an Application Developer<br>at KAF Investment Bank.<br>
+                                As a professional developer, my interests focus on UI/UX design and development,<br>
+                                and building applications using modern web technologies and Javascript frameworks.
+                            </p>
                         </span>
-                        <h1>Hello There!</h1>
-                        <p class="para-name">My name is Hafidz</p>
-                        <p class="para-name-chinese">我叫何飞志</p>
-                        <p class="para-decs">
-                            I am an Application Developer<br>at KAF Investment Bank.<br>
-                            As a professional developer, my interests focus on UI/UX design and development,<br>
-                            and building applications using modern web technologies and Javascript frameworks.
-                        </p>
-                    </span>
-                </div>
-
-                <!-- image 2 -->
-                <div class="slide slide-2">
-                    <img src="images/img2.jpg">
-                    <span class=overlay>
-                        <h1>Work Experience 1</h1>
-                        <p class="para-date">Nov 2018 - Current</p>
-                        <p class="para-company">KAF Investment Bank</p>
-                        <p class="para-pos">Application Developer</p>
-                        <ul class="para-work-desc">
-                            <li>Collaborated with senior developers in developing and maintaining KAF in-house applications.</li>
-                            <li>Designed and developed wireframes, workflows and contributed to the front-end and back-end development.</li>
-                            <li>Technologies: ASP.NET Web Forms, VB.NET, jQuery, Bootstrap, HTML and CSS</li>
-                        </ul>
-                    </span>
-                </div>
-
-                <!-- image 3 -->
-                <div class="slide slide-3">
-                    <img src="images/img3.jpg">
-                    <span class=overlay>
-                        <h1>Work Experience 2</h1>
-                        <p class="para-date">May 2018 - Sep 2018</p>
-                        <p class="para-company">Breadcrumb Digital</p>
-                        <p class="para-pos">Front End Developer Intern</p>
-                        <ul class="para-work-desc">
-                            <li>Demonstrated development tasks using SharePoint SPFx framework, Restful API, ReactJS and TypeScript.</li>
-                            <li>Performed and maintained existing applications for SharePoint and WordPress development.</li>
-                            <li>Technologies: SharePoint, SPFx, Restful API, ReactJS, TypeScript, SASS, WordPress.</li>
-                        </ul>
-                    </span>
-                </div>
-
-                <!-- image 4 -->
-                <div class="slide slide-4">
-                    <img src="images/img4.jpg">
-                    <span class=overlay>
-                        <h1>My Contact Details</h1>
-                        <span class="para-emails">
-                            Email 1: m.hafidz_92@yahoo.com<br>
-                            Email 2: hafidz.invictus@gmail.com<br>
-                            Email 3: imperius.invictus@outlook.com
+                    </div>
+            
+                    <!-- image 2 -->
+                    <div class="slide slide-2">
+                        <img src="images/img2.jpg">
+                        <span class=overlay>
+                            <h1>Work Experience 1</h1>
+                            <p class="para-date">Nov 2018 - Current</p>
+                            <p class="para-company">KAF Investment Bank</p>
+                            <p class="para-pos">Application Developer</p>
+                            <ul class="para-work-desc">
+                                <li>Collaborated with senior developers in developing and maintaining KAF in-house applications.</li>
+                                <li>Designed and developed wireframes, workflows and contributed to the front-end and back-end development.</li>
+                                <li>Technologies: ASP.NET Web Forms, VB.NET, jQuery, Bootstrap, HTML and CSS.</li>
+                            </ul>
                         </span>
-                        <p class="para-mobile">017 444 8226</p>         
-                        <p class="para-linkedin">LinkedIn: <a href="https://au.linkedin.com/in/muhammad-hafidz-misrudin-6b748245" target="_blank">Click Link Here!</a></p>
-                        <p class="para-github">GitHub: <a href="https://github.com/MuhammadHafidzMisrudin" target="_blank">Click Link Here!</a></p>
-                        <p class="para-indeed">Indeed: <a href="https://my.indeed.com/p/muhammadhafidzm-bnydth4" target="_blank">Click Link Here!</a></p>
+                    </div>
+            
+                    <!-- image 3 -->
+                    <div class="slide slide-3">
+                        <img src="images/img3.jpg">
+                        <span class=overlay>
+                            <h1>Work Experience 2</h1>
+                            <p class="para-date">May 2018 - Sep 2018</p>
+                            <p class="para-company">Breadcrumb Digital</p>
+                            <p class="para-pos">Front End Developer Intern</p>
+                            <ul class="para-work-desc">
+                                <li>Demonstrated development tasks using SharePoint SPFx framework, Restful API, ReactJS and TypeScript.</li>
+                                <li>Performed and maintained existing applications for SharePoint and WordPress development.</li>
+                                <li>Technologies: SharePoint, SPFx, Restful API, ReactJS, TypeScript, SASS, WordPress.</li>
+                            </ul>
+                        </span>
+                    </div>
+            
+                    <!-- image 4 -->
+                    <div class="slide slide-4">
+                        <img src="images/img4.jpg">
+                        <span class=overlay>
+                            <h1>My Contact Details</h1>
+                            <span class="para-emails">
+                                Email 1: m.hafidz_92@yahoo.com<br>
+                                Email 2: hafidz.invictus@gmail.com<br>
+                                Email 3: imperius.invictus@outlook.com
+                            </span>
+                            <p class="para-mobile">017 444 8226</p>
+                            <p class="para-linkedin">LinkedIn: <a href="https://au.linkedin.com/in/muhammad-hafidz-misrudin-6b748245" target="_blank">Click Link Here!</a></p>
+                            <p class="para-github">GitHub: <a href="https://github.com/MuhammadHafidzMisrudin" target="_blank">Click Link Here!</a></p>
+                            <p class="para-indeed">Indeed: <a href="https://my.indeed.com/p/muhammadhafidzm-bnydth4" target="_blank">Click Link Here!</a></p>
+                        </span>
+                    </div>
+            
+                    <!-- image 5 -->
+                    <div class="slide slide-5">
+                        <img src="images/img5.jpg">
+                        <span class=overlay>
+                            <h1>My Favourite Quote!</h1>
+                            <p class="para-name">Publius Horatius Cocles once said:</p>
+                            <blockquote class="quote">
+                                To every man upon this earth,<br>
+                                Death cometh soon or late.<br>
+                                And how can man die better<br>
+                                Than facing fearful odds,<br>
+                                For the ashes of his fathers,<br>
+                                And the temples of his gods.
+                            </blockquote>
+                            <p class="para-author">― Thomas Babington Macaulay, Lays of Ancient Rome</p>
+                        </span>
+                    </div>
+                </div>
+            </div> 
+            <!-- end container slides -->
+
+            <!-- container right-arrow -->
+            <div class="container">
+                <!-- right arrow -->
+                <div class="control right-arrow">
+                    <div class="arrow">
+                        <div class="line line-3"></div>
+                        <div class="line line-4"></div>
+                    </div>
+                </div>
+            </div> 
+            <!-- end container right-arrow -->
+
+            <!-- container play-pause -->
+            <div class="container">
+                <!-- play and pause -->
+                <div class="play-pause">
+                    <span id="icon-wrapper">
+                        <i id="icon" class="fas fa-play"></i>
                     </span>
                 </div>
+            </div> 
+            <!-- end container play-pause -->
 
-                <!-- image 5 -->
-                <div class="slide slide-5">
-                    <img src="images/img5.jpg">
-                    <span class=overlay>
-                        <h1>My Favourite Quote!</h1>
-                        <p class="para-name">Publius Horatius Cocles once said:</p>
-                        <blockquote class="quote">
-                            To every man upon this earth,<br>
-                            Death cometh soon or late.<br>
-                            And how can man die better<br>
-                            Than facing fearful odds,<br>
-                            For the ashes of his fathers,<br>
-                            And the temples of his gods.
-                        </blockquote>
-                        <p class="para-author">― Thomas Babington Macaulay, Lays of Ancient Rome</p>
-                    </span>
-                </div>
-            </div>
-
-            <!-- right arrow -->
-            <div class="control right-arrow">
-                <div class="arrow">
-                    <div class="line line-3"></div>
-                    <div class="line line-4"></div>
-                </div>
-            </div>
-
-            <!-- play and pause -->
-            <div class="play-pause">
-                <span id="icon-wrapper">
-                    <i id="icon" class="fas fa-play"></i>
-                </span>
-            </div>
-        </div>
-    </div>
+        </div> <!-- end slideshow-wrapper -->
+    </div> <!-- end container-fluid -->
 
     <!-- js links -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
 </body>

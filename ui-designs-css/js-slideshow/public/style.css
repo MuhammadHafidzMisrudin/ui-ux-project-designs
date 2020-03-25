@@ -13,6 +13,11 @@
     padding: 0;
 }
 
+.ctn-extend {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .slideshow-wrapper {
     width: 100%;
     height: 100vh;
@@ -24,6 +29,10 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
     background-color: #000; /* make it a bit darker */
     transition: opacity 1s;
 }
@@ -39,10 +48,10 @@
 .overlay {
     position: absolute;
     z-index: 100;
-    width: 30%; /* set the width of the positioned div */
+    width: 45%; /* set the width of the positioned div */
     margin: 0 auto;
-    padding: 30px;
-    top: 19%; /* adjust this value to move the positioned div up and down */
+    padding: 15px;
+    top: 15%; /* adjust this value to move the positioned div up and down */
     left: 0;
     right: 0;
     text-align: center;
@@ -73,12 +82,14 @@
 }
 
 .overlay h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
     font-size: 40px;
     text-decoration: underline;
 }
 
 .overlay .para-name {
-    margin: 15px;
+    margin: 10px 0 10px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: 600;
@@ -86,7 +97,7 @@
 }
 
 .overlay .para-name-chinese {
-    margin: 15px;
+    margin: 10px 0 10px 0;
     font-family: 'Noto Serif SC', serif;
     font-size: 25px;
     font-weight: 600;
@@ -95,8 +106,8 @@
 }
 
 .overlay .para-decs {
-    margin: 10px;
-    padding-top: 25px;
+    margin: 10px 0 10px 0;
+    padding-top: 20px;
     font-size: 20px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
@@ -104,13 +115,13 @@
 }
 
 .overlay .para-date {
-    margin: 10px;
-    font-size: 25px;
+    margin: 10px 0 10px 0;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .overlay .para-company {
-    margin: 10px;
+    margin: 10px 0 10px 0;
     font-size: 25px;
     font-weight: 600;
     font-family: 'Fredoka One', cursive;
@@ -119,16 +130,21 @@
 }
 
 .overlay .para-pos {
-    margin: 10px;
-    font-size: 27px;
+    margin: 10px 0 10px 0;
+    font-size: 25px;
     font-family: 'Righteous', cursive;
     color: aquamarine;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.overlay .para-work-desc {
+    margin: 0 5px 0 5px;
+}
+
 .overlay .para-work-desc li {
-    margin: 5px;
-    font-size: 19px;
+    margin: 5px 0 5px 0;
+    padding: 0 0 0 2px;
+    font-size: 20px;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -136,7 +152,7 @@
 }
 
 .overlay .para-emails {
-    margin: 10px 0 10px 0;
+    margin: 15px 0 15px 0;
     font-size: 22px;
     font-weight: 500;
     font-family: 'Crimson Text', serif;
