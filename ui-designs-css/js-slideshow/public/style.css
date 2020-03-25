@@ -298,3 +298,127 @@ blockquote {
     color: #fff;
     font-size: 70px;
 }
+
+/* media queries section */
+@media screen and (max-width: 1380px) and (max-height: 780px) {
+    .overlay {
+        width: 50%;
+        padding: 10px 10px 5px 10px;
+        margin: 20px auto;
+        top: 10%;
+        color: #fff;
+    }
+
+    .overlay h1 {
+        margin: 0 0 6px 0;
+        padding: 0;
+        font-size: 35px;
+    }
+
+    .overlay .para-name {
+        margin: 10px 0 5px 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .overlay .para-name-chinese {
+        margin: 5px 0 5px 0;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    
+    .overlay .container-decs {
+        margin: 5px 0 5px 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .overlay .container-decs p {
+        text-align: justify;
+    }
+    
+    .overlay .para-date {
+        margin: 5px 0 5px 0;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .overlay .para-company {
+        margin: 5px 0 5px 0;
+        font-size: 20px;
+        font-weight: 600;
+        color: deepskyblue;
+    }
+    
+    .overlay .para-pos {
+        margin: 5px 0 5px 0;
+        font-size: 20px;
+        color: aquamarine;
+    }
+    
+    .overlay .para-work-desc {
+        margin: 0 0 0 0;
+    }
+    
+    .overlay .para-work-desc p {
+        margin: 2px 5px 2px 5px;
+        padding: 0 0 0 2px;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        text-align: justify;
+    }
+    
+    .overlay .para-emails {
+        margin: 10px 0 10px 0;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .overlay .para-mobile {
+        margin: 5px 0 5px 0;
+        font-size: 20px;
+    }
+    
+    .overlay .para-linkedin,
+    .overlay .para-github,
+    .overlay .para-indeed {
+        margin: 5px 0 5px 0;
+        font-size: 15px;
+    }
+
+    blockquote:before,
+    blockquote:after {
+        color: deepPink;
+        font-size: 1.0em;
+    }
+
+    blockquote {
+        margin-left: 0px;
+        border-left: 5px solid deepPink;
+        font-size: 15px;
+    }
+
+    .overlay .para-author {
+        margin: 6px 0 6px 0;
+        font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .control {
+        width: 13vw;
+    }
+
+    .play-pause {
+        bottom: 25px;
+        padding: 10px 5px 10px 5px;
+    }
+
+    .play-pause span {
+        font-size: 50px;
+    }
+}
+/* media queries section end */
