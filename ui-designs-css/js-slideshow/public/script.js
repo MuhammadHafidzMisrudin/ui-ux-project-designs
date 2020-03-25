@@ -78,7 +78,8 @@ $(() => {
         const iconID = document.getElementById("icon").classList[1];
 
         // check if classname is fa-play, then remove its class and add a new classname, fa-pause.
-        if (iconID == "fa-play") {
+        // else, vice versa.
+        if (iconID === "fa-play") {
             document.getElementById("icon").classList.remove("fa-play");
             document.getElementById("icon").classList.add("fa-pause");
         } else {
@@ -89,13 +90,19 @@ $(() => {
 
     // invoke function to check and show the visibility of arrow controls.
     const arrowVisibility = () => {
+        // set arrows variable as element selector of parent element with classname, control.
         const arrows = $(".control");
+        console.log("from-arrowvisibility-arrows: ", arrows);
 
+        // loop through by transforming node list of arrows into an array.
         Array.from(arrows).forEach((arrow) => {
+            console.log("from-arrowvisibility-array-current-arrow:", arrow)
+            // if false, the slideshow runs automatically, hide arrow controls (add new class).
+            // else, it doesn't run automatically, then show arrow controls (remove new class).
             if (playPauseBool === false) {
-                arrows.addClass("arrow-visibility");
+                arrow.classList.add("arrow-visibility");
             } else {
-                arrows.removeClass("arrow-visibility");
+                arrow.classList.remove("arrow-visibility");
             }
         });
     }
@@ -108,19 +115,31 @@ $(() => {
 
     // event selector for left arrow control.
     $(".left-arrow").click(() => {
+        // if false, the slides running automatically.
         if (playPauseBool === false) {
+            // the slideshow stops.
             playPause();
         }
+
+        // decrement value, get previous slide.
         current--;
+
+        // change the slide.
         changeSlides();
     });
 
     // event selector for right arrow control.
     $(".right-arrow").click(() => {
+        // if false, the slides running automatically.
         if (playPauseBool === false) {
+            // the slideshow stops.
             playPause();
         }
+
+        // increment value, get next slide.
         current++;
+
+        // change the slide.
         changeSlides();
     });
 
