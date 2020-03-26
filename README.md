@@ -29,3 +29,10 @@ It displays an interactive overlay effect when hamburger menu button is clicked.
 
 - [Link 1](https://hamburger-menu-interactive-01.web.app/)
 - [Link 2](https://hamburger-menu-interactive-01.firebaseapp.com/)
+
+## Design 6: Resume Slideshow
+It showcases an interactive slideshow of my resume.
+It includes an introduction, work experience, contact details & github, and my favourite quote.
+
+- [Link 1](https://resume-slideshow.web.app/)
+- [Link 2](https://resume-slideshow.firebaseapp.com/)
