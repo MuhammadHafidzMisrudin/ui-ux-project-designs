@@ -11,7 +11,7 @@ $(function () {
 
     navOverlay.on("click", () => {
         navBar.removeClass("change");
-        topOverlay.toggleClass("top-change");
+        topOverlay.addClass("top-change");
     });
 
     closeBtn.on("click", () => {
