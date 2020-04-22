@@ -20,7 +20,7 @@ html {
 
 .card {
     width: 40rem;
-    background-color: #ddd;
+    /* background-color: #ddd; */
 }
 
 .card-bio {
@@ -102,4 +102,80 @@ html {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+/* styles for card-social wrapper */
+.card-social {
+    background-color: #ffff;
+    padding: 1.5rem;
+    margin: 2rem 0; /* create spaces between containers */
+    border-radius: 0.3rem;
+    display: flex; /* center the elements */
+    align-items: center; /* center the elements vertically */
+    cursor: pointer;
+}
+
+/* styles for icon-wrapper */
+.icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex; /* centering position */
+    justify-content: center; /* horizontal centering */
+    align-items: center; /* vertical centering */
+    margin-right: 2rem;
+}
+
+/* styles for individual wrapper */
+.email .icon-wrapper {
+    background-color: #dd4b39;  
+}
+
+/* styles for individual wrapper */
+.linkedin .icon-wrapper {
+    background-color: #007bb6;  
+}
+
+/* styles for individual wrapper */
+.slideshow-resume .icon-wrapper {
+    background-color: #3b5998;  
+}
+
+/* styles for icons */
+.icon-wrapper span {
+    font-size: 2rem;
+    color: #ffff;
+}
+
+.contact-details {
+    font-family: 'Dosis', serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.email h4 {
+    color: #dd4b39;
+}
+
+.linkedin h4 {
+    color: #007bb6;
+}
+
+.slideshow-resume h4 {
+    color: #3b5998;
+}
+
+.contact-details p {
+    font-family: 'Dosis', serif;
+    font-size: 1.4rem;
+    color: #444;
+    letter-spacing: 0.1rem;
+}
+
+.card-social .arrow {
+    margin-left: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #999;
 }
