@@ -86,3 +86,20 @@ html {
     outline: none;
     cursor: pointer;
 }
+
+/* styles for card-contact */
+.card-dev-contact {
+    background-color: #2d814d;
+    color: #ffff;
+    padding: 1.5rem 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.card-dev-contact h4 {
+    font-family: 'Dosis', serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+}
