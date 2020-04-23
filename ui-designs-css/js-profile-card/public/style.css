@@ -134,6 +134,26 @@ html {
     visibility: hidden; /* hide the element */
 }
 
+/* transition time with delay time */
+.email {
+    transition: all 0.6s 0.3s;
+}
+
+.linkedin {
+    transition: all 0.6s 0.5s;
+}
+
+.slideshow-resume {
+    transition: all 0.6s 0.7s;
+}
+
+/* when a click event gets triggered */
+.change .card-social {
+    transform: translateY(0); /* display the boxes */
+    opacity: 1;
+    visibility: visible;
+}
+
 /* styles for icon-wrapper */
 .icon-wrapper {
     width: 4rem;
