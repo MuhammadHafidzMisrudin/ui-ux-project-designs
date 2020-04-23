@@ -29,6 +29,7 @@ html {
     display: flex;
     border-radius: 0.5rem 0.5rem 0 0;
     position: relative;
+    z-index: 100; /* move the position on the top */
 }
 
 /* styles for image-wrapper */
@@ -93,6 +94,8 @@ html {
     color: #ffff;
     padding: 1.5rem 2rem;
     border-radius: 0 0 0.5rem 0.5rem;
+    transform: translateY(-100%); /* move the element up or hide the element */
+    transition: all 0.6s; /* make it smooth */
 }
 
 .card-dev-contact h4 {
@@ -102,9 +105,22 @@ html {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+    transform: scale(0); /* change the size of text to 0 */
+    transform-origin: left;
+    transition: all 0.6s; /* make it smooth */
 }
 
-/* styles for card-social wrapper */
+/* when a click event gets triggered */
+.change .card-dev-contact {
+    transform: translateY(0); /* display the element */
+}
+
+/* when a click event gets triggered */
+.change .card-dev-contact h4 {
+    transform: scale(1); /* increase the size of text */
+}
+
+/* styles for card-social wrapper for boxes */
 .card-social {
     background-color: #ffff;
     padding: 1.5rem;
@@ -113,6 +129,9 @@ html {
     display: flex; /* center the elements */
     align-items: center; /* center the elements vertically */
     cursor: pointer;
+    transform: translateY(-50%); /* move the element boxes up */
+    opacity: 0; /* hide the element */
+    visibility: hidden; /* hide the element */
 }
 
 /* styles for icon-wrapper */
