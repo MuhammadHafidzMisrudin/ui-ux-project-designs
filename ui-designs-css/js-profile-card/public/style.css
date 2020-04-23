@@ -272,4 +272,17 @@ html {
     font-size: 2rem;
     font-weight: bold;
     color: #999;
+    background-color: burlywood;
+    padding: 0.3rem;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    position: relative;    
+}
+
+.card-social .arrow a {
+    color: #999;
+    text-decoration: none;
+    right: 0.8rem;
+    position: absolute;
 }
