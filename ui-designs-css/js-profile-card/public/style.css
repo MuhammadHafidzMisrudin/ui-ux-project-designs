@@ -108,7 +108,7 @@ html {
 .card-social {
     background-color: #ffff;
     padding: 1.5rem;
-    margin: 2rem 0; /* create spaces between containers */
+    margin: 2rem 0; /* create some space between containers */
     border-radius: 0.3rem;
     display: flex; /* center the elements */
     align-items: center; /* center the elements vertically */
@@ -141,13 +141,13 @@ html {
     background-color: #3b5998;  
 }
 
-/* styles for icons */
+/* styles for individual icon */
 .icon-wrapper span {
     font-size: 2rem;
     color: #ffff;
 }
 
-.contact-details {
+.contact-details h4 {
     font-family: 'Dosis', serif;
     font-size: 1.6rem;
     letter-spacing: 0.1rem;
@@ -173,6 +173,7 @@ html {
     letter-spacing: 0.1rem;
 }
 
+/* styles for right arrow */
 .card-social .arrow {
     margin-left: auto;
     font-size: 2rem;
