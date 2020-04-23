@@ -34,6 +34,9 @@ It displays an interactive overlay effect when hamburger menu button is clicked.
 It showcases an interactive slideshow of my resume.
 It includes an introduction, work experience, contact details & github, and my favourite quote.
 
+<span>
+<a href="https://resume-slideshow.web.app/" target="_blank">Link 1</a>
+</span>
 - [Link 1](https://resume-slideshow.web.app/)
 - [Link 2](https://resume-slideshow.firebaseapp.com/)
 
