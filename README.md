@@ -34,7 +34,7 @@ It displays an interactive overlay effect when hamburger menu button is clicked.
 It showcases an interactive slideshow of my resume.
 It includes an introduction, work experience, contact details & github, and my favourite quote.
 
-- [Link 1](https://resume-slideshow.web.app/)
+- [Link 1](https://resume-slideshow.web.app/) - https://resume-slideshow.web.app/
 - [Link 2](https://resume-slideshow.firebaseapp.com/)
 
 ## Design 7: Landing Page with Modal Forms.
