@@ -41,3 +41,8 @@ It includes an introduction, work experience, contact details & github, and my f
 A simple design of a landing page with interactive modal forms - Login and Signup.
 - [Link 1](https://landing-page-modal-form.web.app/)
 - [Link 2](https://landing-page-modal-form.firebaseapp.com/)
+
+## Design 8: My Developer Profile Card.
+It displays a list of contact details that includes Email, LinkedIn and Slideshow Resume.
+- [Link 1](https://myprofilecard.web.app/)
+- [Link 2](https://myprofilecard.firebaseapp.com/)
