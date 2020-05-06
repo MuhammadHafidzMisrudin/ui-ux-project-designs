@@ -143,6 +143,9 @@ $(() => {
         changeSlides();
     });
 
+    // change the slides from the beginning.
     changeSlides();
+
+    // play the slides automatically.
     playPause();
 });
